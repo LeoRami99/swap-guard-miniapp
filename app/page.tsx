@@ -37,7 +37,9 @@ export default function Home() {
 					</div>
 
 					{wallet ? (
-						<Swap />
+						<>
+							<Swap />
+						</>
 					) : (
 						<div className='flex flex-col items-center justify-center'>
 							<img src={LogoSwapGuard.src} alt='Swap Guard Logo' className='size-48 mb-4 animate-spin-slow' />
